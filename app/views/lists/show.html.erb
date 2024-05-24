@@ -1,4 +1,4 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%=  %>');">
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= cl_image_path @list.photo.key %>');">
   <div class="container">
     <h1 class="text-center fw-bold"><%= @list.name %></h1>
   </div>
@@ -10,7 +10,7 @@
   <%= link_to '+ New movie', class:"btn btn-warning justify-end" %>
 </div>
   <div class="row mt-5">
-   
+
   </div>
   <div class="d-flex justify-content-end">
     <%= link_to "< Back", lists_path, class:"btn btn-secondary justify-end" %>
